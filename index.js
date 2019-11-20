@@ -1,23 +1,23 @@
-onst returnFirstTwoDrivers = function(drivers) {
-  return drivers.slice(0,2);
-}
+const returnFirstTwoDrivers = function (drivers) {
+  return drivers.slice(0, 2);
+};
 
-const returnLastTwoDrivers = function(drivers) {
+const returnLastTwoDrivers = function (drivers) {
   return drivers.slice(-2);
-}
+};
 
-const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
+const selectingDrivers = [ returnFirstTwoDrivers, returnLastTwoDrivers ];
 
-function createFareMultiplier(num) {
-  return function(fare) {
-    return fare * num;
-  }
-}
+const createFareMultiplier = function (multiplyValue) {
+  return function (value) {
+    return multiplyValue * value;
+  };
+};
 
 const fareDoubler = createFareMultiplier(2);
 
 const fareTripler = createFareMultiplier(3);
 
-function fetchSpecifiedDrivers(drivers, fetch) {
-  return fetch(drivers);
-}
+const selectDifferentDrivers = function (drivers, whichDrivers) {
+  return whichDrivers(drivers);
+};

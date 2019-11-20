@@ -14,8 +14,7 @@ const createFareMultiplier = function (multiplyValue) {
   };
 };
 
-function fetchSpecifiedDrivers(drivers, fetch) {
-  return fetch(drivers);
+
 
 const fareDoubler = createFareMultiplier(2);
 
